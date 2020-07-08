@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1 align="center">Form Types</h1>
+    <div class="links" style="width:90vw;padding-left:40%;">
+        
+         {% for view_text, view_name in form_types %}
+         <li><a href="{{request.get_full_path}}{{view_name}}">{{view_text}}  </a></li>
+                {% endfor %} 
+    </div>
+
+</body>
+
+</html>
